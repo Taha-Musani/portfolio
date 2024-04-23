@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #add8e6;
+  color: #252424;
+}
+/* #header{
+    position: sticky;
+    top: 0;
+} */
+.container {
+  padding: 5px 5%;
+}
+nav {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo-img img {
+  width: 20%;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+ul {
+  display: flex;
+  margin-right: 18px;
+}
+ul a {
+  text-decoration: none;
+  color: #252424;
+}
+ul li {
+  list-style: none;
+  margin-right: 32px;
+  font-size: 18px;
+  position: relative;
+}
+ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  background-color: #252424;
+  bottom: -3px;
+  left: 0;
+  border-radius: 12px;
+  transition: 0.3s ease-in;
+}
+ul li:hover::after {
+  width: 80%;
+}
+
+#Home {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+  margin-top: 1rem;
+}
+.left-home {
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+.left-home h1 {
+  font-size: 72px;
+  color: #252424;
+}
+.left-home h2 {
+  font-size: 36px;
+  color: #252424;
+}
+.left-home p {
+  margin-top: 16px;
+  font-size: 36px;
+  color: #252424;
+}
+.right-home {
+  width: 50%;
+}
+.right-home img {
+  margin-left: 4rem;
+  width: 90%;
+  margin-top: -7vh;
+  border-radius: 12px;
+}
+.box {
+  display: flex;
+  justify-content: space-evenly;
+}
+#About h1 {
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  color: #252424;
+}
+.left-about {
+  flex-basis: 40%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.left-about img {
+  height: 50vh;
+  margin-left: -10vh;
+  width: fit-content;
+}
+.right-about {
+  flex-basis: 50%;
+  margin-left: 2rem;
+}
+.about-text {
+  font-size: 18px;
+  margin-bottom: 54px;
+  color: #252424;
+}
+.right-about ul li {
+  margin-right: 54px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.skill-div, .education-div, .experience-div {
+  margin-top: 24px;
+  font-size: 18px;
+}
+.education {
+  display: none;
+}
+.experience {
+  display: none;
+}
+.right-about ul {
+  position: relative;
+}
+.active-link::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2.5px;
+  background-color: #252424;
+  bottom: -3px;
+  left: 0;
+}
+#Project h1 {
+  font-size: 54px;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: #252424;
+}
+.project-dis {
+  width: 100%;
+  color: #252424;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  place-items: center;
+  gap: 5rem;
+  column-count: 2;
+  justify-content: center;
+}
+.project-cards {
+  justify-content: center;
+  width: 80%;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+.project-cards img {
+  width: 100%;
+  border-radius: 5%;
+}
+.btn {
+  display: block;
+  padding: 0.8rem;
+  border-radius: 8px;
+  width: auto;
+  margin: 20px auto;
+  cursor: pointer;
+  margin-top: 3rem;
+  border: none;
+  background-color: #252424;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.container-contact {
+  display: flex;
+  margin-top: 3rem;
+}
+.left-cont h1 {
+  font-size: 54px;
+  padding-bottom: 2rem;
+  color: #252424;
+}
+.left-cont {
+  flex-basis: 40%;
+  padding: 3rem;
+}
+.email {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.3rem;
+}
+.email p {
+  font-size: 24px;
+  color: #252424;
+}
+.email > img {
+  width: 7%;
+  padding-right: 1rem;
+}
+.social-app {
+  display: flex;
+  margin-top: 1rem;
+}
+.social-app > img {
+  width: 7%;
+  padding-right: 1.5rem;
+  cursor: pointer;
+}
+.right-cont {
+  flex-basis: 40%;
+}
+.colum {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.colum > label {
+  color: #252424;
+}
+.colum > input {
+  height: 30px;
+  outline: none;
+  font-size: 18px;
+  padding: 0.2rem;
+  margin-top: 0.5rem;
+  color: #252424;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #add8e6;
+}
+#message {
+  font-size: 18px;
+  padding: 0.2rem;
+  width: 545px;
+  height: 163px;
+  resize: none;
+  margin-top: 0.5rem;
+  outline: none;
+  color: #252424;
+  border-radius: 6px;
+  border: 1px solid black;
+  background-color: #add8e6;
+}
+.footer {
+  text-align: center;
+  padding: 0.5rem;
+  /* background-color:#ede0f6; */
+  background-color: #add8e6;
+  color: #252424;
+  margin-top: 1rem;
+  font-size: 1.15rem;
+}

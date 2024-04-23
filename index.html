@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Assets/logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+        <nav>
+          <div class="logo-img">
+            <a href="#header"><img src="./Assets/logo.jpg" alt="logo-img" /></a>
+          </div>
+          <ul>
+            <a href="#Home">
+              <li>Home</li>
+            </a>
+            <a href="#About">
+              <li>About</li>
+            </a>
+            <a href="#Project">
+              <li>Project</li>
+            </a>
+            <a href="#Contact">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="container">
+      <section id="Home">
+        <div class="left-home">
+          <h2>I, am</h2>
+          <h1>
+            <!-- <br> I am <br> Taha 
+            Musani -->
+            Taha Musani
+          </h1>
+          <h2>Web Developer</h2>
+        </div>
+        <div class="right-home">
+          <img src="./Assets/sitted_coding.png" alt="user-img" />
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section id="About">
+        <h1>About Me</h1>
+        <div class="box">
+          <div class="left-about">
+            <img src="./Assets/code.png" alt="user-img" />
+          </div>
+          <div class="right-about">
+            <p class="about-text">
+              Hey there! I'm Taha, a passionate frontend developer with a keen
+              eye for crafting immersive and user-centric web experiences. My
+              journey in the world of web development began with a love for
+              turning ideas into visually stunning and functional websites.
+            </p>
+            <ul>
+              <li class="active-link skill-click">Skill</li>
+              <li class="education-click">Education</li>
+              <li class="experience-click">Experience</li>
+            </ul>
+            <div class="skill">
+              <div class="skill-div">
+                <b>
+                  <p>Languages</p>
+                </b>
+                <p>HTML | CSS | JavaScript</p>
+                <p>C/C++ | Java | SQL</p>
+              </div>
+              <div class="skill-div">
+                <b>
+                  <p>Frameworks & Libraries</p>
+                </b>
+                <p>Bootstrap</p>
+                <p>Tailwind CSS</p>
+                <p>Angular JS</p>
+              </div>
+              <div class="skill-div">
+                <b>
+                  <p>Tools & Technologies</p>
+                </b>
+                <p>Version Control (Git/ Github)</p>
+                <p>Responsive Web Design</p>
+                <p>Browser Developer Tools</p>
+              </div>
+            </div>
+            <div class="education">
+              <div class="education-div">
+                <b>
+                  <p>B.E.- Information & Technology</p>
+                </b>
+                <p>Marwadi Education Foundation Group of Institution(GTU)</p>
+                <p>09/2021 - present</p>
+              </div>
+              <div class="education-div">
+                <b>
+                  <p>HSC</p>
+                </b>
+                <p>SOS- The School of Science</p>
+                <p>06/2020 - 05/2021</p>
+              </div>
+              <div class="education-div">
+                <b>
+                  <p>SSC</p>
+                </b>
+                <p>Shree Vandana Vidhyalay</p>
+                <p>06/2018 - 03/2019
+                </p>
+              </div>
+            </div>
+            <div class="experience">
+              <div class="experience-div">
+                <b>
+                  <p>Exposys Data Lab</p>
+                </b>
+                <p>Web Developer Intern</p>
+                <p>04/2024 - 05/2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="Project">
+      <h1>Projects</h1>
+      <div class="container-grid">
+        <div class="project-cards">
+          <a href="https://taha-musani.github.io/recipeMaker/"><img src="./Assets/project1.jpg" alt="project-img" /></a>
+          <p class="project-dis">
+            <b>Recipe Finder</b>
+          </p>
+        </div>
+        <div class="project-cards">
+          <a href="https://taha-musani.github.io/Tic-Tac-Toe/"><img src="./Assets/project2.jpg" alt="project-img" /></a>
+          <p class="project-dis">
+            <b>Tic Toc Toe</b>
+          </p>
+        </div>
+        <div class="project-cards">
+          <a href="https://taha-musani.github.io/To-do-list/"><img src="./Assets/project3.jpg" alt="project-img" /></a>
+          <p class="project-dis">
+            <b>To Do List</b>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section id="Contact">
+        <div class="container-contact">
+          <div class="left-cont">
+            <h1>Contact Me</h1>
+            <div class="email">
+              <img src="./Assets/at-solid.svg" width="20%" alt="email icon" />
+              <p>musanitaha37@gmail.com</p>
+            </div>
+            <div class="email">
+              <img src="./Assets/phone-solid.svg" width="20%" alt="phone" />
+              <p>+91 6355512080</p>
+            </div>
+            <div class="social-app">
+              <img src="./Assets/linkedin.svg" alt="linkedin" />
+              <img src="./Assets/github.svg" alt="github" />
+            </div>
+            <button class="btn">Download CV</button>
+          </div>
+          <div class="right-cont">
+            <form>
+              <div class="colum">
+                <label for="Name">Enter Your Name</label>
+                <input type="text" id="Name" />
+              </div>
+              <div class="colum">
+                <label for="email">Enter Your email</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="colum">
+                <label for="message">Enter your Message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button class="btn">Submit</button>
+      </section>
+    </div>
+    <footer>
+      <div class="footer">&copy;Taha Musani-All Rights Reserved</div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
