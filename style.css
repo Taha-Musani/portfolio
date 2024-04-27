@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #add8e6;
+  background-color: #caf0f8;
   color: #252424;
 }
 /* #header{
@@ -128,7 +128,9 @@ ul li:hover::after {
   font-size: 24px;
   cursor: pointer;
 }
-.skill-div, .education-div, .experience-div {
+.skill-div,
+.education-div,
+.experience-div {
   margin-top: 24px;
   font-size: 18px;
 }
@@ -221,12 +223,15 @@ ul li:hover::after {
   width: 7%;
   padding-right: 1rem;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 .social-app {
-  display: flex;
   margin-top: 1rem;
 }
-.social-app > img {
-  width: 7%;
+.social-app img {
+  width: 8%;
   padding-right: 1.5rem;
   cursor: pointer;
 }
@@ -250,7 +255,7 @@ ul li:hover::after {
   color: #252424;
   border: 1px solid black;
   border-radius: 6px;
-  background-color: #add8e6;
+  background-color: #caf0f8;
 }
 #message {
   font-size: 18px;
@@ -263,13 +268,13 @@ ul li:hover::after {
   color: #252424;
   border-radius: 6px;
   border: 1px solid black;
-  background-color: #add8e6;
+  background-color: #caf0f8;
 }
 .footer {
   text-align: center;
   padding: 0.5rem;
   /* background-color:#ede0f6; */
-  background-color: #add8e6;
+  background-color: #caf0f8;
   color: #252424;
   margin-top: 1rem;
   font-size: 1.15rem;
